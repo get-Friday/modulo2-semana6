@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modulo2-semana6-api", "modulo2-semana6-api\modulo2-semana6-api.csproj", "{DCD4B6D9-2754-4021-B64D-8A286D4F5F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modulo2-semana6-tests", "modulo2-semana6-tests\modulo2-semana6-tests.csproj", "{585EF7B5-AD70-4269-B585-A88B2539C4CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD4B6D9-2754-4021-B64D-8A286D4F5F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD4B6D9-2754-4021-B64D-8A286D4F5F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD4B6D9-2754-4021-B64D-8A286D4F5F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD4B6D9-2754-4021-B64D-8A286D4F5F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585EF7B5-AD70-4269-B585-A88B2539C4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585EF7B5-AD70-4269-B585-A88B2539C4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585EF7B5-AD70-4269-B585-A88B2539C4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585EF7B5-AD70-4269-B585-A88B2539C4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

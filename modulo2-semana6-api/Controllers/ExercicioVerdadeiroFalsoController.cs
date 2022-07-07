@@ -17,9 +17,9 @@ public class ExercicioVerdadeiroFalsoController : ControllerBase
     [HttpGet("{tipo}")]
     public string Get(string tipo)
     {
-        if (tipo != "verdadeiro" || tipo != "falso")
+        if (tipo != "verdadeiro" && tipo != "falso")
         {
-            throw new Exception("Texto diferente de verdadeiro ou falso");
+            return "Texto diferente de verdadeiro ou falso";
         }
         return tipo;
     }

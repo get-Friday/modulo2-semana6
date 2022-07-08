@@ -18,6 +18,22 @@ public class ExercicioSomaController : ControllerBase
     [HttpGet("{valorA}/{valorB}")]
     public string Get(int valorA, int valorB)
     {
-        return "";
+        try
+        {
+            int sum = valorA + valorB;
+            if (sum < 10)
+            {
+                return $"{valorA} + {valorB} = {sum}";
+            }
+
+            Random number = new Random();
+            throw new Exception($"{number.Next(10, 9999)}");
+        }
+        catch(Exception ex)
+        {
+            throw new Exception("Erro ao somar.", ex);
+        }
+
+        return "sla";
     }
 }

@@ -23,17 +23,15 @@ public class ExercicioSomaController : ControllerBase
             int sum = valorA + valorB;
             if (sum < 10)
             {
-                return $"{valorA} + {valorB} = {sum}";
+                return $"{sum}";
             }
 
             Random number = new Random();
-            throw new Exception($"{number.Next(10, 9999)}");
+            return $"{number.Next(10, 9999)}";
         }
         catch(Exception ex)
         {
             throw new Exception("Erro ao somar.", ex);
         }
-
-        return "sla";
     }
 }

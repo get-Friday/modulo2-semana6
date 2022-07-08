@@ -23,7 +23,7 @@ public class TesteEmail : ConfiguracaoHostApi
 
         var responseApi = await result.Content.ReadAsStringAsync();
         Assert.NotNull(responseApi);
-        Assert.NotEqual("Email inválido", responseApi);
+        Assert.Equal(email, responseApi);
     }
 }
 

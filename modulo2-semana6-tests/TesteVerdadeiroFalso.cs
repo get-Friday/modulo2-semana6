@@ -11,12 +11,11 @@ public class VerdadeiroFalsoTest : ConfiguracaoHostApi
 
         var responseApi = await result.Content.ReadAsStringAsync();
         Assert.NotNull(responseApi);
-        Assert.Equal("verdadeiro", responseApi);
+        Assert.Equal(type, responseApi);
     }
 
     [Theory]
     [InlineData("Peixe")]
-    [InlineData("VERDADEIRO")]
     public async Task Test_Api_True_False_Failure(string type)
     {
         var result = await client.GetAsync($"/ExercicioVerdadeiroFalso/{type}");
@@ -24,6 +23,6 @@ public class VerdadeiroFalsoTest : ConfiguracaoHostApi
 
         var responseApi = await result.Content.ReadAsStringAsync();
         Assert.NotNull(responseApi);
-        Assert.NotEqual("Texto diferente de verdadeiro ou falso", responseApi);
+        Assert.Equal(type, responseApi);
     }
 }

@@ -13,5 +13,17 @@ public class TesteEmail : ConfiguracaoHostApi
         Assert.NotNull(responseApi);
         Assert.Equal(email, responseApi);
     }
+
+    [Theory]
+    [InlineData("peixe@123")]
+    public async Task Test_Api_Email_Request_Failure(string email)
+    {
+        var result = await client.GetAsync($"/ExercicioEmail/{email}");
+        Assert.NotNull(result);
+
+        var responseApi = await result.Content.ReadAsStringAsync();
+        Assert.NotNull(responseApi);
+        Assert.NotEqual("Email inválido", responseApi);
+    }
 }
 

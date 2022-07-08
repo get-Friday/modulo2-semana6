@@ -24,6 +24,6 @@ public class VerdadeiroFalsoTest : ConfiguracaoHostApi
 
         var responseApi = await result.Content.ReadAsStringAsync();
         Assert.NotNull(responseApi);
-        Assert.Equal("Texto diferente de verdadeiro ou falso", responseApi);
+        Assert.NotEqual("Texto diferente de verdadeiro ou falso", responseApi);
     }
 }
